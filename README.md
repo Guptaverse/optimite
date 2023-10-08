@@ -1,5 +1,7 @@
 # OTIMITE-REACT-APP
 
+
+![Video](./src/images/Home.JPG)
 Here is Home Page
 ![Home Page]()
 <p align="center">

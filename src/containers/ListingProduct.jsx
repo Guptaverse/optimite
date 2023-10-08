@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { sortProducts } from "../redux/Slices/productSlices";
 import Modal from "../components/Modal";
 import { useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-import { faStar } from "@fortawesome/free-solid-svg-icons"; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const ListingProduct = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -46,13 +46,17 @@ const ListingProduct = () => {
         <div className="flex flex-row flex-wrap w-[80%] justify-around">
           {products.map((item) => (
             <div
-              className="max-w-xs rounded overflow-hidden shadow-lg mb-10 mx-4 bg-white"
+              className="max-w-xs rounded overflow-hidden shadow-lg mb-10 mx-4 bg-white group hover:border-red-600 transform hover:scale-105 transition-transform"
               key={item.id}
               onClick={() => {
                 navigate(`/product/${item.id}`);
               }}
             >
-              <img src={item.image} alt="Product" className="h-[300px] m-auto" />
+              <img
+                src={item.image}
+                alt="Product"
+                className="h-[300px] m-auto"
+              />
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{item.title}</div>
                 <p
@@ -75,13 +79,13 @@ const ListingProduct = () => {
                   {item.category}
                 </span>
                 <div className="mt-2 flex items-center">
-                    <FontAwesomeIcon
+                  <FontAwesomeIcon
                     icon={faStar}
                     className="w-6 h-6 text-yellow-500 mr-2"
                   />
-                  <span className="text-gray-700">
-                    {`${item.rating?.rate ?? 0}(${item.rating?.count ?? 0})`}
-                  </span>
+                  <span className="text-gray-700">{`${item.rating?.rate ?? 0}(${
+                    item.rating?.count ?? 0
+                  })`}</span>
                 </div>
               </div>
             </div>

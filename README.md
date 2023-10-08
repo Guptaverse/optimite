@@ -1,24 +1,20 @@
 # OTIMITE-REACT-APP
 
 
-![Video](./src/images/Home.JPG)
 Here is Home Page
-![Home Page]()
-<p align="center">
-  <img src="./src/images/Home.JPG" alt="Alt Text" width="500px" height="700px">
-</p>
+
+![Video](./src/images/Home.JPG)
+
 
 Add New Product
-![Add Product]()
-<p align="center">
-  <img src="./src/images/Add.gif" alt="Alt Text" width="500px" height="700px">
-</p>
+
+![Video](./src/images/Add.gif)
+
 
 Add Sort Product
-![Add Product]()
-<p align="center">
-  <img src="./src/images/Sort.gif" alt="Alt Text" width="500px" height="700px">
-</p>
+
+![Video](./src/images/Sort.gif)
+
 
 
 ## Tech Stack

@@ -11,7 +11,7 @@ Add New Product
 ![Video](./src/images/Add.gif)
 
 
-Add Sort Product
+Sort Product
 
 ![Video](./src/images/Sort.gif)
 

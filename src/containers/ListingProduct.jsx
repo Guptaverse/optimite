@@ -42,7 +42,7 @@ const ListingProduct = () => {
         </button>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal} />
-      <div className="flex justify-center w-[100%] py-10 bg-[rgb(68,70,84)]">
+      <div className="flex justify-center w-[100%] py-10 bg-[#5668EF]">
         <div className="flex flex-row flex-wrap w-[80%] justify-around">
           {products.map((item) => (
             <div
